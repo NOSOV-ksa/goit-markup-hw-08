@@ -1,0 +1,81 @@
+.footer {
+  padding: 60px 0px;
+  background-color: $filler-color;
+}
+.footer-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.contact-wrapper {
+  flex-grow: 1;
+}
+
+.list__footer {
+ margin-top: 20px;
+}
+
+
+
+.footer-area {
+  margin-bottom: 9px;
+  &--contact {
+    @extend %main-font;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.social-link {
+  margin-right: 93px;
+}
+
+.area {
+  @extend %main-font;
+  color: $complementary-color;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.accede {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $complementary-color;
+  margin: 0px;
+}
+
+.submit {
+  display: block;
+  width: 570px;
+}
+.submit__input {
+  height: 50px;
+  width: 353px;
+  margin: 20px 12px 0px 0px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  &[placeholder] {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25px;
+    color: $complementary-color;
+  }
+}
+
+.button--submit {
+  @extend .button;
+  position: relative;
+  padding: 10px 62px 10px 29px;
+}
+
+.submit__icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}

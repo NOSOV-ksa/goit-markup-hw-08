@@ -1,0 +1,30 @@
+//color
+
+$accent-color: #2196f3;
+$main-color-text: #212121;
+$secondary-color-text: #757575;
+$main-fill-color: #e5e5e5;
+$secondary-fill-color: #f5f4fa;
+$filler-color: #2f303a;
+$complementary-color: #ffffff;
+$border-color: #cecece;
+$color-icon: #afb1b8;
+
+%logo-font{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 3%;
+    color: $accent-color;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+%main-font{
+    font-family: Roboto, sans-serif;
+    color: $main-color-text;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}

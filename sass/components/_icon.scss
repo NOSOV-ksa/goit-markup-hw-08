@@ -1,0 +1,72 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icon__link {
+  @include transition;
+  @include display-flex-centr;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.social__icon {
+  @include transition;
+  fill: $color-icon;
+}
+.icon__link:hover,
+.icon__link:focus {
+  background-color: $accent-color;
+  outline: none;
+  .social__icon {
+    fill: $complementary-color;
+  }
+}
+
+.social__icon--other-background{
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+// логотипы клиентов
+
+.clients {
+  @include display-flex-centr;
+}
+
+.clients__title{
+  @include display-flex-centr;
+  @include transition;
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.clients__logo {
+  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+  fill: $color-icon;
+  @include transition;
+
+  .clients__title:hover &,
+  .clients__title:focus & {
+    outline: none;
+    fill: $accent-color;
+  }
+}

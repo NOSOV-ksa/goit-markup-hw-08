@@ -1,0 +1,13 @@
+.logo {
+  @extend %logo-font;
+  margin-right: 93px;
+  
+}
+
+.logo--header {
+  color: $main-color-text;
+}
+
+.logo--footer {
+  color: $complementary-color;
+}

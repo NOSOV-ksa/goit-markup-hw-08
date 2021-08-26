@@ -1,0 +1,222 @@
+.backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: $complementary-color;
+  text-align: center;
+  font-size: 14px;
+}
+
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: local;
+  fill: #000;
+
+  cursor: pointer;
+  .close-icon:hover {
+    fill: $accent-color;
+  }
+}
+
+.close-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  @include transition;
+}
+
+//форма заполнения
+
+.fieldset {
+  border: none;
+  margin: 0px 0px 20px;
+  padding: 0px;
+}
+
+.title-form {
+  @extend %main-font;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+
+  padding: 0px;
+  margin: 0px 0px 12px;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include transition;
+  &:hover .label-item,
+  &:hover .user-data,
+  &:hover .comment-area {
+    border-color: $accent-color;
+  }
+}
+
+.label-item {
+  @extend %main-font;
+  font-size: 12px;
+  color: $secondary-color-text;
+  margin-bottom: 4px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.user-data {
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px 0px 0px 42px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.person-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+
+  @include transition;
+  cursor: pointer;
+
+  .form-name:hover & {
+    fill: $accent-color;
+  }
+  .form-name:focus & {
+    fill: $accent-color;
+  }
+}
+
+.comment-area {
+  @extend %main-font;
+  line-height: 1.14;
+  letter-spacing: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  width: 448px;
+  resize: none;
+  padding: 12px 16px;
+  @include transition;
+  outline: none;
+  cursor: pointer;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.checkholder__link {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px 0px 30px;
+}
+
+.check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  // border: none;
+  &-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
+.check-box {
+  top: 0%;
+  left: 0%;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+  background-image: url(../images/off.svg);
+  .check-input:checked + & {
+    background-image: url(../images/on.svg);
+  }
+  .check-input:focus + & {
+    background-image: url(../images/off-focused.svg);
+  }
+  .check-input:focus:checked + & {
+    background-image: url(../images/on-focused.svg);
+  }
+}
+
+.check-text {
+  @extend %main-font;
+  line-height: 142%;
+  margin-left: 8.38px;
+  color: $secondary-color-text;
+}
+
+.checkbox-link {
+  @extend .check-text;
+  margin-left: 7px;
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.button__check-box {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 40px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
