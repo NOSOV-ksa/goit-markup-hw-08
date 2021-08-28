@@ -70,3 +70,24 @@ background-color: rgba(255, 255, 255, 0.1);
     fill: $accent-color;
   }
 }
+
+//mobile menu
+
+.menu-button{
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.menu-button .icon-cross{
+  display: none;
+}
+
+.menu-button .is-open .icon-cross{
+  display: block;
+}
+
+.menu-button .is-open .icon-menu{
+  display: none;
+}
