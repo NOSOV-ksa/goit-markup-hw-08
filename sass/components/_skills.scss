@@ -1,6 +1,11 @@
 .section--inner{
   padding-top: 0px;
 }
+@media screen and (max-width: 1600px) {
+  .section--inner{
+    display: none;
+  }
+}
 .section-title {
   @extend %main-font;
   margin-bottom: 50px;

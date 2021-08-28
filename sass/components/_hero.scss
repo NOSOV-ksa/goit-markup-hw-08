@@ -1,13 +1,13 @@
 .hero {
-  position: relative;
-  max-width: 1600px;
-  height: 600px;
+  // position: relative;
+  // max-width: 1600px;
+  // height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-color: $filler-color;
-  height: 600px;
+  // height: 600px;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero.jpg');
+    url('../../images/hero.jpg');
   
   background-repeat: no-repeat;
   background-position: center;
@@ -15,8 +15,8 @@
 
 .hero__title {
   position: absolute;
-  top: 200px;
-  left: 50%;
+  // top: 200px;
+  // left: 50%;
   transform: translateX(-50%);
 
   @extend %main-font;

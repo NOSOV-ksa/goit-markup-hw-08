@@ -1,6 +1,10 @@
 .header {
   // display: flex;
-  align-items: center;
+  //align-items: center;
+  //background-color: $complementary-color;
+  background-color: gold;
+  height: 100vh;
+  width: 100vw;
 }
 
 .header--border-bottom {
@@ -8,23 +12,23 @@
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .header-nav .header-nav__item + .header-nav__item {
-  margin-left: 40px;
+  //margin-left: 40px;
 }
 
 .headder__item {
-  position: relative;
-  padding: 32px 0px;
+  // position: relative;
+ // padding: 32px 0px;
   cursor: pointer;
 }
 
 .header-nav__link {
-  position: relative;
-  display: block;
+ // position: relative;
+  //display: block;
 
   color: $main-color-text;
   @extend %main-font;
@@ -52,14 +56,14 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
 }
 
 .contact__link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   @extend %main-font;
   color: $secondary-color-text;
   letter-spacing: 0.02em;

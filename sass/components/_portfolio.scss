@@ -1,11 +1,11 @@
 .products {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .products__item{
       margin: 15px;
-      width: 370px;
+      // width: 370px;
       border: 1px solid $main-fill-color;
       @include transition;
 }
@@ -47,7 +47,7 @@
 }
 
 .popup {
-  display: inline-block;
+  // display: inline-block;
   position: absolute;
   top: 0%;
   left: 0%;

@@ -1,18 +1,18 @@
 // особенности
 
 .features {
-  display: flex;
+  // display: flex;
   & .features__item + .features__item {
     margin-left: 30px;
   }
 }
 
 .features__box {
-  @include display-flex-centr;
+  // @include display-flex-centr;
   @include transition;
 
-  width: 270px;
-  height: 120px;
+ // width: 270px;
+// height: 120px;
 
   background-color: $secondary-fill-color;
   border-radius: 4px;
