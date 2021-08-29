@@ -1,6 +1,8 @@
 .logo {
   @extend %logo-font;
-  margin-right: 93px;
+  display: flex;
+  justify-content: center;
+ // margin-right: 93px;
   
 }
 
