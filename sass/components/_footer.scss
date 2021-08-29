@@ -2,11 +2,11 @@
   padding: 60px 0px;
   background-color: $filler-color;
 }
-.footer-item {
+//.footer-item {
 //  display: flex;
 //  align-items: baseline;
 //  justify-content: space-between;
-}
+//}
 
 .contact-wrapper {
   flex-grow: 1;
@@ -54,7 +54,7 @@
 }
 .submit__input {
   height: 50px;
-  width: 353px;
+  // width: 353px;
   margin: 20px 12px 0px 0px;
   background-color: transparent;
   border-radius: 4px;

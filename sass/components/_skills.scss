@@ -6,15 +6,6 @@
     display: none;
   }
 }
-.section-title {
-  @extend %main-font;
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
 
 .gallery {
   display: flex;

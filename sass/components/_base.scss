@@ -35,12 +35,15 @@ h3 {
 }
 
 .section{
-  padding: 94px 0px 94px;
+  padding: 60px 0px;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0px;
+  }
 }
 
 .container {
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
 }

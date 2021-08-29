@@ -1,21 +1,49 @@
 // особенности
 
-// .features {
-// display: flex;
-//   & .features__item + .features__item {
+.features {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display:inline-flex;
+    flex-wrap: wrap;
+    width: 354px;
+    margin: -15px;  
+  }
+  @media screen  and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+// & .features__item + .features__item {
 //     margin-left: 30px;
 //   }
-// }
+  
+.features__item {
+  margin: 0px;
+  margin-bottom: 30px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: calc ((100% - 2 * 60) / 2);
+  }
+}
 
 .features__box {
-//   @include display-flex-centr;
-//   @include transition;
-
-// width: 270px;
-// height: 120px;
-
-  background-color: $secondary-fill-color;
-  border-radius: 4px;
+  @include display-flex-centr;
+  @include transition;
+    background-color: $secondary-fill-color;
+    border-radius: 4px;
+    height: 120px;
+    max-width: 450px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 354px;
+  }
+  @media screen  and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -25,15 +53,20 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
 }
 
 .features__descr {
-  margin: 0px;
+  //display: block;
+  margin: 0px auto;
   padding: 0px;
 
   @extend %main-font;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.87;
+  line-height:  1.714;
   color: $secondary-color-text;
+
+  
+  //line-height: 1.87;
 }

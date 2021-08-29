@@ -1,11 +1,11 @@
-.header {
+//.header {
   // display: flex;
   //align-items: center;
   //background-color: $complementary-color;
   
-  height: 100vh;
-  width: 100vw;
-}
+  //height: 100vh;
+  //width: 100vw;
+//}
 
 .header--border-bottom {
   border-bottom: 1px solid $border-color;
@@ -24,19 +24,17 @@
 }
 
 .header-nav__link {
- // position: relative;
-  //display: block;
-
-  color: $main-color-text;
   @extend %main-font;
-  padding: 28px 0px;
   letter-spacing: 0.02em;
   @include transition;
-
   &:hover,
   &:focus {
     color: $accent-color;
   }
+
+  //position: relative;
+  //display: block;
+  //padding: 28px 0px;
 }
 
 .header-nav__link--current::after {
@@ -57,6 +55,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  display: none;
 }
 
 .contact__link {
