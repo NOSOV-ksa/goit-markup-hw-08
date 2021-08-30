@@ -14,12 +14,13 @@
 
 .list__footer {
  margin-top: 20px;
+ text-align: center;
 }
 
 
 
 .footer-area {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   &--contact {
     @extend %main-font;
     font-size: 14px;
@@ -28,16 +29,18 @@
   }
 }
 
-.social-link {
-  margin-right: 93px;
+.socail-link {
+  margin-top: 60px;
+  text-align: center
+  //margin-right: 93px;
 }
 
 .area {
   @extend %main-font;
   color: $complementary-color;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 
 .accede {
@@ -50,6 +53,8 @@
 
 .submit {
   display: block;
+  margin-top: 60px;
+  text-align: center;
   //width: 570px;
 }
 .submit__input {
