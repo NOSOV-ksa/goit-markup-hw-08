@@ -1,15 +1,23 @@
 .hero {
   max-width:  480px;
-  min-height: 400px;
+  height: 400px;
   background-color: $filler-color;
   padding-top: 118px;
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
-  //background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //  url('../../images/hero.jpg');
-  
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url('../../images/mobile/Hero_480.jpg');
+  @media screen and (min-devace-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio:2),
+  (-o-min-device-pixel-ratio:2/1),
+  (min-resolution:192dpi),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 2dppx) {
+    background-image: url(../../images/mobile/Hero_480@2x.jpg);
+  }
 
   // position: relative;
   // max-width: 1600px;
@@ -40,7 +48,7 @@
 .hero--button {
   display: block;
   margin: 0px auto;
-  
+
 
   //position: absolute;
   //left: 50%;
