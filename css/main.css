@@ -118,7 +118,7 @@ h3 {
   padding: 60px 0px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0px;
   }
@@ -409,7 +409,7 @@ h3 {
   line-height: 1.1666;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
     display: block;
@@ -440,13 +440,20 @@ h3 {
 }
 
 .filter {
-  margin: 0px;
-  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0px auto 50px auto;
 }
 
 .filter .filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter__item {
+  margin-top: 15px;
 }
 
 .btn {
@@ -737,7 +744,7 @@ h3 {
   max-width: 450px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .features {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -749,7 +756,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .features {
     width: 270px;
   }
@@ -764,7 +771,7 @@ h3 {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .features__item {
     width: calc -10%;
   }
@@ -790,13 +797,13 @@ h3 {
   max-width: 450px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .features__box {
     width: 354px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .features__box {
     width: 270px;
   }
@@ -829,6 +836,7 @@ h3 {
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/mobile/Hero_480.jpg");
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/Hero_480.jpg");
 }
@@ -836,6 +844,37 @@ h3 {
 @media screen and (min-devace-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../../images/mobile/Hero_480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/tablet/Hero_768.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tablet/Hero_768.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-devace-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/tablet/Hero_768@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/desktop/Hero_1600.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desktop/Hero_1600.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-devace-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/desktop/Hero_1600@2x.jpg);
   }
 }
 
@@ -919,7 +958,7 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -929,6 +968,9 @@ h3 {
 
 .command__item {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
   margin-bottom: 30px;
   background-color: #ffffff;
   border-bottom-left-radius: 4px;
@@ -942,11 +984,26 @@ h3 {
   margin-bottom: 0px;
 }
 
+.command__item img {
+  max-width: 100%;
+}
+
+.command__pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .command__wrapper {
   padding: 30px 0px 24px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .command__wrapper {
     padding: 30px 0px 30px;
   }
@@ -991,13 +1048,13 @@ h3 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .clients__title {
     width: 226px;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
     width: 170px;
   }
@@ -1053,7 +1110,7 @@ h3 {
   outline: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1065,12 +1122,6 @@ h3 {
   top: 10px;
   right: 15px;
   color: #000;
-}
-
-@media (min-width: 420px) {
-  .menu-container .menu-toggle {
-    display: none;
-  }
 }
 
 .menu-toggle:hover,
@@ -1095,12 +1146,6 @@ h3 {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 420px) {
-  .menu-container {
-    display: none;
-  }
-}
-
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -1110,12 +1155,6 @@ h3 {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-@media screen and (min-width: 420px) {
-  .mobile-menu {
-    display: none;
-  }
 }
 
 .mobile-menu__item:not(:last-child) {

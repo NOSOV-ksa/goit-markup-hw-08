@@ -30,9 +30,9 @@
   top: 10px;
   right: 15px;
   color: #000;
-  @media (min-width: $mobile) {
-    display: none;
-  }
+  // @media screen and (max-width: $tablet) {
+  //   display: none;
+  // }
 }
 
 .menu-toggle:hover,
@@ -52,9 +52,9 @@
 
   transform: translateX(160%);
   @include transition;
-  @media screen and(min-width: $mobile) {
-    display: none;
-  }
+  // @media screen and(min-width: $mobile) {
+  //   display: none;
+  // }
 }
 
 .menu-container.is-open {
@@ -67,9 +67,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  @media screen and (min-width: $mobile) {
-    display: none;
-  }
 }
 
 .mobile-menu__item:not(:last-child){

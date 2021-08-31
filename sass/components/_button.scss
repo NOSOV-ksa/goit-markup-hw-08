@@ -18,14 +18,19 @@
 //кнопки портфолио
 
 .filter {
-  // display: flex;
-  // justify-content: center;
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0px auto 50px auto;
   & .filter__item:not(:last-child) {
+    // justify-content: center;
+    // margin: 0px;
+    // padding: 0px;
     margin-right: 8px;
   }
+}
+
+.filter__item{
+  margin-top: 15px;
 }
 
 .btn {
