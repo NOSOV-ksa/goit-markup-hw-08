@@ -1,5 +1,5 @@
 .hero {
-  max-width:  480px;
+  max-width:  $mobile;
   height: 400px;
   background-color: $filler-color;
   padding-top: 118px;
@@ -23,8 +23,7 @@
   @media screen and (min-width: $tablet) {
     max-width: 768px;
     height: 400px;
-
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image:
   url('../../images/tablet/Hero_768.jpg');
   @media screen and (min-devace-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio:2),
@@ -39,8 +38,7 @@
   @media screen and (min-width: $desktop) {
     max-width: 1600px;
     height: 600px;
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image:
   url('../../images/desktop/Hero_1600.jpg');
   @media screen and (min-devace-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio:2),
@@ -49,40 +47,30 @@
   (-webkit-min-device-pixel-ratio: 2),
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 2dppx) {
-    background-image: url(../../images/desktop/Hero_1600@2x.jpg);
+  background-image: url(../../images/desktop/Hero_1600@2x.jpg);
   }
-
   }
-
 }
 
 .hero__title {
   @extend %main-font;
   text-transform: uppercase;
   color: $complementary-color;
-  text-align: center;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.615;
+  text-align: center;
   margin-bottom: 30px;
-
-
-  //font-size: 44px;
-  //line-height: 1.36;
-  //letter-spacing: 0.04em;
-  //position: absolute;
-  // top: 200px;
-  // left: 50%;
-  //transform: translateX(-50%);
+  @media screen and (min-width: $desktop) {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.04em;
+  top: 200px;
+  left: 50%;
+}
 }
 
 .hero--button {
   display: block;
   margin: 0px auto;
-
-
-  //position: absolute;
-  //left: 50%;
-  //transform: translateX(-50%);
-  //bottom: 200px;
 }

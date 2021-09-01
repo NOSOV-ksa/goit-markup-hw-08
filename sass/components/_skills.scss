@@ -1,17 +1,16 @@
 .section--inner{
-  padding-top: 0px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding-top: 0px;
 }
-@media screen and (max-width: 1600px) {
-  .section--inner{
-    display: none;
-  }
 }
 
 .gallery {
   display: flex;
+  justify-content: center;
   margin: 0px;
   padding: 0px;
-
   text-align: center;
   & .gallery__item + .gallery__item {
     padding-left: 30px;

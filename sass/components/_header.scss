@@ -1,40 +1,48 @@
-//.header {
-  // display: flex;
-  //align-items: center;
-  //background-color: $complementary-color;
-  
-  //height: 100vh;
-  //width: 100vw;
-//}
-
-.header--border-bottom {
-  border-bottom: 1px solid $border-color;
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mobile;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    justify-content:flex-start;
+    height: 80px;
+    max-width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: $desktop;
+    justify-content: space-between;
+  }
 }
 
 .header-nav {
   display:none;
-  @media screen and (min-width: 780px){
+  @media screen and (min-width: $tablet){
   display: flex;
   align-items: center;
 }
 }
 
 .header-nav .header-nav__item + .header-nav__item {
-  margin-left: 40px;
+  margin-left: 50px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 40px;
+  }
 }
 
 .header-nav__link {
-  @extend %main-font;
   letter-spacing: 0.02em;
+  @extend %main-font;
   @include transition;
   &:hover,
   &:focus {
     color: $accent-color;
   }
-
-  //position: relative;
-  //display: block;
-  //padding: 28px 0px;
+  position: relative;
+  display: block;
+  padding: 32px 0px;
 }
 
 .header-nav__link--current::after {
@@ -48,19 +56,26 @@
   opacity: 1;
   display: block;
   left: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 }
 
 .contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
   display: none;
+  @media screen and (min-width: $tablet) {
+    margin-left: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .contact__link {
-  display: none;
   @extend %main-font;
+  font-size: 12px;
+  line-height: 1.16;
   color: $secondary-color-text;
   letter-spacing: 0.02em;
   @include transition;
@@ -72,9 +87,13 @@
       fill: $accent-color;
     }
   }
-  @media screen and(min-width:1170px) {
-      display: flex;
+  @media screen and(min-width: $tablet) {
+    display: flex;
     align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  line-height: 1.14;
   }
 }
 
@@ -85,6 +104,15 @@
   @include transition;
 }
 
+.contact__item {
+  @media screen and (max-width: $desktop) {
+  display: block;
+}
+}
 .contact__item + .contact__item {
-  margin-left: 50px;
+  margin: 10px 0px 0px;
+  @media screen and (min-width: $desktop) {
+    margin: 0px 0px 0px 50px;
+
+  }
 }
