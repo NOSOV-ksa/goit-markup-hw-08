@@ -35,6 +35,7 @@
   }
 }
   @media screen and (min-width: $desktop) {
+    padding-top: 200px;
     height: 600px;
     background-image:
   url('../../images/hero/Hero_1600.jpg');
@@ -63,7 +64,6 @@
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.04em;
-  top: 200px;
   left: 50%;
 }
 }
