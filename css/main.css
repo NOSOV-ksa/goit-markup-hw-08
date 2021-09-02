@@ -386,7 +386,7 @@ h3 {
   margin-bottom: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .project__item {
     width: 354px;
     margin-right: 30px;
@@ -1158,7 +1158,6 @@ h3 {
 }
 
 .hero {
-  max-width: 480px;
   height: 400px;
   background-color: #2f303a;
   padding-top: 118px;
@@ -1179,7 +1178,6 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
     background-image: url("../../images/tablet/Hero_768.jpg");
   }
@@ -1193,7 +1191,6 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     height: 600px;
     background-image: url("../../images/desktop/Hero_1600.jpg");
   }
@@ -1516,6 +1513,7 @@ h3 {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .menu-container.is-open {
@@ -1558,7 +1556,7 @@ h3 {
 }
 
 .mobile-contact__phone {
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   font-size: 34px;
   line-height: 1.17;
   color: #2196f3;
@@ -1614,7 +1612,7 @@ h3 {
   display: block;
   font-size: 18px;
   line-height: 1.22;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #2196f3;
 }
 

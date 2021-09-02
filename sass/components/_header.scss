@@ -92,6 +92,7 @@
       fill: $accent-color;
     }
   }
+
   @media screen and(min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -105,7 +106,6 @@
 .contact__icon {
   margin-right: 10px;
   fill: $secondary-color-text;
-
   @include transition;
 }
 
@@ -114,10 +114,10 @@
   display: block;
 }
 }
+
 .contact__item + .contact__item {
   margin: 10px 0px 0px;
   @media screen and (min-width: $desktop) {
     margin: 0px 0px 0px 50px;
-
   }
 }
