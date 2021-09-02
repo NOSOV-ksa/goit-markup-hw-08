@@ -1173,6 +1173,7 @@ h3 {
 @media screen and (min-devace-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../../images/hero/Hero_480@2x.jpg);
+    background-image: url(../../images/hero/Hero_480@2x.jpg);
   }
 }
 
