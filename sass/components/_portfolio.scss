@@ -1,34 +1,60 @@
-.products {
-  // display: flex;
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  margin: -15px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0px;
+    //align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+
+  }
   // flex-wrap: wrap;
 }
 
-.products__item{
-      margin: 15px;
+.project__item{
+  border: 1px solid $main-fill-color;
+  @include transition;
+  margin: 15px;
+  max-width: 450px;
+  & img {
+    max-width: 100%;
+  }
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+  }
+     // margin: 15px;
       // width: 370px;
-      border: 1px solid $main-fill-color;
-      @include transition;
 }
 
-.wrapper-padding{
-  margin: -15px;
-}
+// .wrapper-padding{
+//   margin: -15px;
+// }
 
-.products__item:hover,
-.products__item:focus {
+.project__item:hover,
+.project__item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 1px 4px 4px rgba(0, 0, 0, 0.06),
     1px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.products__box {
+.project__box {
   position: relative;
   overflow: hidden;
 }
-.products__description {
+.project__description {
   padding: 20px 24px;
 }
 
-.products__title {
+.project__title {
   @extend %main-font;
   font-size: 18px;
   font-weight: 700;
@@ -38,7 +64,7 @@
   padding: 0px;
 }
 
-.products__text {
+.project__text {
   margin: 0px;
   padding: 0px;
   @extend %main-font;
@@ -63,8 +89,8 @@
   height: 100%;
   margin: 0px;
   padding: 63px 24px;
-  .products__item:hover &,
-  .products__item:focus & {
+  .project__item:hover &,
+  .project__item:focus & {
     transform: translateY(0%);
   }
 }

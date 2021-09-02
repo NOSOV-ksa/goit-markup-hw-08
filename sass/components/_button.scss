@@ -20,17 +20,24 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
+  justify-content:flex-start;
   margin: 0px auto 50px auto;
   & .filter__item:not(:last-child) {
-    // justify-content: center;
+    margin-right: 8px;
     // margin: 0px;
     // padding: 0px;
-    margin-right: 8px;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+
   }
 }
 
-.filter__item{
+.filter__item {
   margin-top: 15px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
 }
 
 .btn {

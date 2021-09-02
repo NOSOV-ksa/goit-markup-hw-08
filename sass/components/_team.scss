@@ -18,50 +18,63 @@
 }
 
 .command {
- display: block;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
  justify-content: center;
+ margin: -15px;
  @media screen and (min-width: $tablet) {
-   display: flex;
-   flex-wrap: wrap;
-justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
    margin-top: 0px;
-   margin: -15px;
+   margin-left: -15px;
+   margin-right: -15px;
  }
-  // & .command__item + .command__item {
-  // //  margin-left: 30px;
-  // }
+ @media screen and (min-width: $desktop) {
+   margin: 0px;
+   & .command__item + .command__item {
+   margin-left: 30px;
+   }
+ }
 }
 
 .command__item {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 450px;
-  margin: 15px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 1px rgba(0, 0, 0, 0.12);
   background-color: $complementary-color;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-radius: 2px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 1px 1px rgba(0, 0, 0, 0.12);
-  &:last-child{
-    margin-bottom: 0px;
-  }
+  max-width: 450px;
+  margin: 15px;
   & img{
     max-width: 100%;
   }
+  &:last-child{
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: $tablet) {
     width: 354px;
-
+    &:nth-last-child(-n + 2){
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    margin: 0px;
+    &:nth-last-child(-n + 2){
+      margin-bottom: 0px;
   }
 }
-
-.command__pic{
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+// .command__pic{
+//   display: flex;
+//   justify-content: center;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 
 .command__wrapper {
