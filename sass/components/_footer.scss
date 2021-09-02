@@ -17,11 +17,14 @@
 }
 
 .contact-wrapper {
+  width: max-content;
+margin-right: auto;
+margin-left: auto;
   @media screen and (min-width: $tablet) {
     margin-left: 76px;
   }
   @media screen and (min-width: $desktop) {
-    margin: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -78,15 +81,14 @@
   display: flex;
   flex-direction: column;
   @media screen and (min-width: $tablet) {
-    // margin-left: auto;
-    // margin-right: auto;
+
   }
   @media screen and (min-width: $desktop) {
     display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 0px;
-  margin-left: 93px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 93px;
   }
 }
 
