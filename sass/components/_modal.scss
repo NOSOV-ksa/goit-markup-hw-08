@@ -205,15 +205,15 @@ position: relative;
   width: 1.5em;
   height: 1.5em;
   cursor: pointer;
-  background-image: url(../../images/svg__check/off.svg);
+  background-image: url(../images/svg__check/off.svg);
   .check-input:checked + & {
-    background-image: url(../../images/svg__check/on.svg);
+    background-image: url(../images/svg__check/on.svg);
   }
   .check-input:focus + & {
-    background-image: url(../../images/svg__check/off-focused.svg);
+    background-image: url(../images/svg__check/off-focused.svg);
   }
   .check-input:focus:checked + & {
-    background-image: url(../../images/svg__check/on-focused.svg);
+    background-image: url(../images/svg__check/on-focused.svg);
   }
 }
 
