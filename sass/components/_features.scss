@@ -41,6 +41,9 @@
   text-align: center;
   margin: 30px 0px 10px;
   text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 
 .features__descr {

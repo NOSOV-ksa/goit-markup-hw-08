@@ -51,12 +51,21 @@
 
 // мобильное меню=================
 
+.mobile--wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-menu {
+  flex-grow: 1;
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 302px;
 }
+
+// .mobile-menu--inner{
+// display: flex;
+// }
 
 .mobile-menu__item:not(:last-child){
    margin-bottom: 32px;
@@ -75,7 +84,9 @@
 }
 }
 
+
 // мобильные меню, контакты===================
+
 .mobile-contact__item{
   margin-bottom: 64px;
   &:not(:last-child) {

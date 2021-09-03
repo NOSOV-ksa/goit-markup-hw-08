@@ -73,6 +73,9 @@
   color: $complementary-color;
   text-transform: uppercase;
   margin: 0px;
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .submit {
@@ -81,7 +84,6 @@
   display: flex;
   flex-direction: column;
   @media screen and (min-width: $tablet) {
-
   }
   @media screen and (min-width: $desktop) {
     display: flex;
