@@ -4,7 +4,6 @@
   min-height: 40px;
   min-width: 40px;
   display: flex;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -12,6 +11,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -51,7 +51,7 @@
 
 // мобильное меню=================
 
-.mobile--wrapper{
+.mobile--wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -64,8 +64,8 @@
   list-style: none;
 }
 
-.mobile-menu__item:not(:last-child){
-   margin-bottom: 32px;
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu__link {
@@ -78,19 +78,19 @@
   &:hover,
   &:focus {
     color: $accent-color;
-}
+  }
 }
 
 // мобильные меню, контакты===================
 
-.mobile-contact__item{
+.mobile-contact__item {
   margin-bottom: 64px;
   &:not(:last-child) {
-  margin-bottom: 32px
+    margin-bottom: 32px;
   }
 }
 
-.mobile-contact__phone{
+.mobile-contact__phone {
   @extend %main-font;
   letter-spacing: 0.01em;
   font-size: 34px;
@@ -98,7 +98,7 @@
   color: $accent-color;
 }
 
-.mobile-contact__mail{
+.mobile-contact__mail {
   @extend %main-font;
   font-size: 24px;
   line-height: 1.17;
@@ -107,8 +107,8 @@
 
 // мобильное меню соцсети=================
 
-.mobile-social{
- @include display-flex-centr;
+.mobile-social {
+  @include display-flex-centr;
   justify-content: flex-start;
   align-items: center;
   position: relative;
@@ -117,22 +117,22 @@
 .mobile-social__item {
   display: flex;
   &:not(:last-child) {
-  margin-right: 10px;
-}
+    margin-right: 10px;
+  }
 }
 
-.mobile-social__item::after{
+.mobile-social__item::after {
   content: '\007C';
   padding-left: 10px;
-  color:rgba(33, 33, 33, 0.2);
+  color: rgba(33, 33, 33, 0.2);
   display: flex;
 }
 
-.mobile-social__item:last-child::after{
-content:"";
+.mobile-social__item:last-child::after {
+  content: '';
 }
 
-.mobile-social__link{
+.mobile-social__link {
   @extend %main-font;
   display: block;
   font-size: 18px;
